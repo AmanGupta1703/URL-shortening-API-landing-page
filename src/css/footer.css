@@ -1,0 +1,151 @@
+.footer {
+  background-color: var(--color-neutral-04);
+  padding: 4rem 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.footer-logo {
+  height: 2.5rem;
+}
+
+/* ************** */
+/* * NAVIGATION * */
+/* ************** */
+.row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-heading {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer-nav-link {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .footer-wrapper,
+  .row {
+    flex-direction: row;
+  }
+
+  .footer-wrapper {
+    column-gap: 12rem;
+  }
+
+  .footer-logo-box {
+    align-self: flex-start;
+  }
+
+  .row {
+    column-gap: 7rem;
+  }
+
+  .col {
+    align-items: start;
+  }
+
+  .footer-nav {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-wrapper {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .footer-nav {
+    row-gap: 1rem;
+  }
+
+  .footer-nav-link {
+    display: inline-block;
+    transition: all 250ms ease-in-out;
+  }
+
+  .social-icon {
+    cursor: pointer;
+  }
+
+  .social-icon-link {
+    transition: color 200ms ease-in-out;
+  }
+
+  .social-icon-link:hover path,
+  .social-icon-link:focus path {
+    fill: var(--color-primary-01);
+  }
+
+  .footer-nav-link:hover,
+  .footer-nav-link:focus {
+    color: var(--color-primary-01);
+    opacity: 1;
+    transform: scale(1.02) rotate(-2deg);
+    transform-origin: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+  }
+
+  .footer-wrapper {
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    transition: all 250ms ease-in-out;
+  }
+
+  .footer-logo-link:hover .footer-logo,
+  .footer-logo-link:focus .footer-logo {
+    transform: scale(1.09);
+  }
+
+  .nav-heading {
+    font-size: 1.8rem;
+  }
+
+  .footer-nav-link {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,139 @@
+.section-form-stats {
+  background-color: #eff1f7;
+  padding: 4rem 1.5rem 6rem;
+  margin-top: 12rem;
+}
+
+/* ******** */
+/* * FORM * */
+/* ******** */
+.form-shorten-url {
+  background-color: var(--color-primary-02);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2.2rem;
+
+  margin-top: -10rem;
+
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ********* */
+/* * STATS * */
+/* ********* */
+
+.stats-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-top: 6rem;
+
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats-description {
+  color: var(--color-neutral-02);
+  font-size: 1.4rem;
+}
+
+.stats-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.line {
+  background-color: var(--color-primary-01);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.6rem;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .form-shorten-url {
+    background-image: url(../../public/images/bg-shorten-desktop.svg);
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    max-width: 75%;
+  }
+
+  .input-url {
+    flex: 1;
+  }
+
+  .form-shorten-url .btn-primary {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .stats-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-shorten-url {
+    padding: 4rem 4.5rem;
+  }
+
+  .stats-cards {
+    gap: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-form-stats {
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    padding-bottom: 12rem;
+  }
+
+  .form-shorten-url {
+    padding: 4rem;
+  }
+
+  .form-shorten-url .btn-primary {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .stats-text {
+    max-width: 48rem;
+  }
+
+  .stats-cards {
+    gap: 0;
+  }
+
+  .stats-description {
+    font-size: 1.6rem;
+  }
+
+  .line {
+    display: block;
+
+    top: 50%;
+    left: 5%;
+    transform: translateX(0);
+    width: 90%;
+    height: 0.4rem;
+  }
+}

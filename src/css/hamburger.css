@@ -1,0 +1,53 @@
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger-icon {
+  background-color: var(--color-neutral-01);
+  display: block;
+  transition: all 500ms ease-in-out;
+  width: 2rem;
+  height: 0.2rem;
+}
+
+.hamburger-icon-1,
+.hamburger-icon-3 {
+  position: absolute;
+}
+
+.hamburger-icon-1 {
+  top: -0.5rem;
+}
+
+.hamburger-icon-3 {
+  bottom: -0.5rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ***************************** */
+/* *       ACTIVE STATES       * */
+/* ***************************** */
+.hamburger:has([type="checkbox"]:checked) .hamburger-icon-1 {
+  transform: rotate(45deg) translateY(0.5rem);
+}
+
+.hamburger:has([type="checkbox"]:checked) .hamburger-icon-2 {
+  opacity: 0;
+}
+
+.hamburger:has([type="checkbox"]:checked) .hamburger-icon-3 {
+  transform: rotate(-45deg) translateY(-0.8rem) translateX(0.1rem);
+}
+
+/* *************************** */
+/* *       MEDIA QUERY       * */
+/* *************************** */
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}

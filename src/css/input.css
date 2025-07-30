@@ -1,0 +1,27 @@
+.input {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  outline: none;
+}
+
+.input-url {
+  background-color: #fff;
+  display: block;
+  padding: 1rem 1.2rem;
+}
+
+.input-url.has-interacted:invalid {
+  border: 0.2rem solid var(--color-secondary-01);
+}
+
+.input-rounded-md {
+  border-radius: 0.6rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .input-url {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.5rem;
+  }
+}

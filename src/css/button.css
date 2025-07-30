@@ -1,0 +1,77 @@
+.btn {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  font-weight: var(--fw-500);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* *************************** */
+/* *      SECONDARY BTN      * */
+/* *************************** */
+.btn-secondary {
+  font-size: 1.2rem;
+}
+
+.btn-small {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.btn-md {
+  padding: 1rem 3rem;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-01);
+}
+
+/* *************************** */
+/* *       MEDIA QUERY       * */
+/* *************************** */
+@media screen and (min-width: 1024px) {
+  .btn-secondary {
+    color: var(--color-neutral-02);
+  }
+
+  .btn-small {
+    padding: 0.8rem 2.5rem;
+  }
+
+  .btn-primary {
+    transition: opacity 250ms ease-in-out;
+  }
+
+  /* *************************** */
+  /* *       STATES            * */
+  /* *************************** */
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    opacity: 0.5;
+  }
+}
+
+/* *************************** */
+/* *       MEDIA QUERY       * */
+/* *************************** */
+
+@media screen and (min-width: 1440px) {
+  .btn-secondary,
+  .btn-primary {
+    font-size: 1.6rem;
+  }
+
+  .btn-md {
+    padding: 1.2rem 3.5rem;
+  }
+
+  .btn-primary {
+    border-radius: 2.5rem;
+  }
+}
